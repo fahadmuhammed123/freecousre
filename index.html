@@ -3,122 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Referral Marketing Course</title>
-  
+  <title>Referral Marketing Webinar Registration</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #1a1a1a; /* black */
+      color: #ffd700; /* golden */
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+    }
+    /* Input field styles */
+    input[type="text"],
+    input[type="email"] {
+      border: 1px solid #ffd700; /* golden */
+      border-radius: 5px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+    /* Button styles */
+    .btn-primary {
+      background-color: #ffd700; /* golden */
+      border-color: #ffd700; /* golden */
+    }
+    .btn-primary:hover {
+      background-color: #c0a700; /* darker golden */
+      border-color: #c0a700; /* darker golden */
+    }
+  </style>
 </head>
-<style>
-  body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.bg-gold {
-  background-color: #FFD700;
-}
-
-.text-black {
-  color: #000000;
-}
-
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-.btn-gold {
-  background-color: #FFD700;
-  color: #000000;
-  border: none;
-}
-
-.btn-gold:hover {
-  background-color: #FFC800;
-}
-
-.bg-black {
-  background-color: #000000;
-}
-
-.text-gold {
-  color: #FFD700;
-}
-
-header, footer {
-  padding: 20px;
-}
-
-section {
-  padding: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-label {
-  margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-button {
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-footer p {
-  margin: 0;
-}
-
-</style>
 <body>
 
-  <header>
-    <h1>Free Referral Marketing Course</h1>
-    <p>Unlock the secrets of successful referral marketing with our free course!</p>
+  <header class="bg-primary text-white py-4">
+    <div class="container text-center">
+      <h1>Referral Marketing Webinar</h1>
+      <p>Register now to join our upcoming webinar!</p>
+    </div>
   </header>
 
-  <section id="course-details">
-    <h2>Course Details</h2>
-    <ul>
-      <li>In-depth modules covering various aspects of referral marketing</li>
-      <li>Interactive lessons with real-world case studies</li>
-      <li>Expert guidance from industry professionals</li>
-      <li>Access to exclusive resources and tools</li>
-    </ul>
+  <section id="registration-form" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Registration Form</h2>
+      <form action="https://formspree.io/f/mleqngye" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" onclick="fax()">Register Now</button>
+      </form>
+    </div>
   </section>
 
-  <section id="signup-form">
-    <h2>Sign Up Now!</h2>
-    <form id="course-form" action="https://formspree.io/f/mleqngye" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit" onclick="sear()">Enroll Now</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Referral Marketing Hub</p>
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Ad web Comic Agency</p>
+    </div>
   </footer>
 
   <script>
-    function sear() {
-      window.open("https://chat.whatsapp.com/IeY5W98hw2WHXE3csRs1mh");
+    function fax(){
+      window.open('https://meet.google.com/urv-cfua-veb');
     }
   </script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

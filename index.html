@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Referral Marketing Webinar Registration</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
     }
     header, footer {
       background-color: #1a1a1a; /* black */
@@ -17,7 +18,8 @@
       padding: 20px 0;
     }
     .container {
-      max-width: 800px;
+      width: 80%;
+      margin: 0 auto;
     }
     /* Input field styles */
     input[type="text"],
@@ -26,37 +28,43 @@
       border-radius: 5px;
       padding: 8px 12px;
       margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
     }
     /* Button styles */
-    .btn-primary {
+    .btn {
       background-color: #ffd700; /* golden */
-      border-color: #ffd700; /* golden */
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
     }
-    .btn-primary:hover {
+    .btn:hover {
       background-color: #c0a700; /* darker golden */
-      border-color: #c0a700; /* darker golden */
     }
   </style>
 </head>
 <body>
 
-  <header class="bg-primary text-white py-4">
+  <header style="background-color: #1a1a1a; color: #ffd700; text-align: center; padding: 20px 0;">
     <div class="container text-center">
       <h1>Referral Marketing Webinar</h1>
       <p>Register now to join our upcoming webinar!</p>
     </div>
   </header>
 
-  <section id="registration-form" class="py-5">
+  <section id="registration-form" style="padding: 50px 0;">
     <div class="container">
-      <h2 class="text-center mb-4">Registration Form</h2>
+      <h2 style="text-align: center; margin-bottom: 20px;">Registration Form</h2>
       <form action="https://formspree.io/f/mleqngye" method="post">
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name" style="color: #ffd700;">Name:</label>
           <input type="text" id="name" name="name" class="form-control" required>
         </div>
         <div class="form-group">
-          <label for="email">Email:</label>
+          <label for="email" style="color: #ffd700;">Email:</label>
           <input type="email" id="email" name="email" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary btn-block" onclick="fax()">Register Now</button>
@@ -64,7 +72,7 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white py-4">
+  <footer style="background-color: #1a1a1a; color: #ffd700; text-align: center; padding: 20px 0;">
     <div class="container text-center">
       <p>&copy; 2024 Ad web Comic Agency</p>
     </div>
@@ -75,7 +83,6 @@
       window.open('https://meet.google.com/urv-cfua-veb');
     }
   </script>
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
